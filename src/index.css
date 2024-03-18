@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Noto Serif TC', serif;
+  margin: 0;
+  background-color: #f7f2ee;
+
+  @apply tracking-normal leading-normal;
+}
+
+.title-line {
+  @apply before:content-[''] before:border-l-4 before:h-full before:mr-3 before:border-primary-100 before:border-solid;
+}
+
+.ant-select-selector {
+  border-radius: 8px !important;
+}
+
+a {
+  color: #bf9d7d;
+}
